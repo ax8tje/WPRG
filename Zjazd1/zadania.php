@@ -71,4 +71,26 @@ function fibonacciSeries($num) {
 $n = 20;
 $fibNumbers = fibonacciSeries($n);
 
-echo implode(", ", $fibNumbers);
+foreach ($fibNumbers as $index => $value) {
+    if ($index % 2 == 0) {
+        echo ($index + 1) . ". " . $value . "\n";
+    }
+}
+
+echo "Zadanie 4" . "\n";
+
+$text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+$words = explode(" ", $text);
+$filteredWords = [];
+
+foreach ($words as $word) {
+    $cleanWord = trim($word, ",.?!;:\"'");
+    if (!empty($cleanWord)) {
+        $filteredWords[$cleanWord] = strlen($cleanWord);
+    }
+}
+
+foreach ($filteredWords as $word => $length) {
+    echo "$word => $length\n";
+}
