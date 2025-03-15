@@ -1,6 +1,8 @@
 <?php
 
 echo "Zadanie 1" . "\n";
+echo "<br>";
+echo "<br>";
 
 $owoce = array("jablko", "banan", "pomarancza");
 
@@ -23,9 +25,13 @@ foreach ($owoce as $wo) {
     }
 
     echo "\n";
+    echo "<br>";
 }
 
+echo "<br>";
 echo "Zadanie 2" . "\n";
+echo "<br>";
+echo "<br>";
 
 function getPrimeNumbers($start, $end) {
     $primeNumbers = [];
@@ -55,8 +61,12 @@ $end = 30;
 $primeNumbers = getPrimeNumbers($start, $end);
 
 echo "Liczby pierwsze pomiedzy $start i $end: " . implode(", ", $primeNumbers) . "\n";
+echo "<br>";
 
+echo "<br>";
 echo "Zadanie 3" . "\n";
+echo "<br>";
+echo "<br>";
 
 function fibonacciSeries($num) {
     $fibSeries = [1, 1];
@@ -74,10 +84,14 @@ $fibNumbers = fibonacciSeries($n);
 foreach ($fibNumbers as $index => $value) {
     if ($index % 2 == 0) {
         echo ($index + 1) . ". " . $value . "\n";
+        echo "<br>";
     }
 }
 
+echo "<br>";
 echo "Zadanie 4" . "\n";
+echo "<br>";
+echo "<br>";
 
 $text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
@@ -93,4 +107,5 @@ foreach ($words as $word) {
 
 foreach ($filteredWords as $word => $length) {
     echo "$word => $length\n";
+    echo "<br>";
 }
